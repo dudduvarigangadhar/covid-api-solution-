@@ -1,0 +1,41 @@
+POST http://localhost:3000/login/
+Content-Type: application/json 
+
+{
+    "username": "christopher_phillips",
+    "password": "christy@123"
+}
+###
+
+GET http://localhost:3000/states/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzAzODMyMDU3fQ.frnpcRbCcpPhmGAmuKW2EmoleNrSlZS62-pnW6XYNGQ
+###
+GET http://localhost:3000/states/8/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzAzODMyMDU3fQ.frnpcRbCcpPhmGAmuKW2EmoleNrSlZS62-pnW6XYNGQ
+###
+POST http://localhost:3000/districts/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzAzODMyMDU3fQ.frnpcRbCcpPhmGAmuKW2EmoleNrSlZS62-pnW6XYNGQ
+Content-Type: application/json 
+
+{
+    "districtName": "Bagalkot",
+    "stateId": 3,
+    "cases": 2323,
+    "cured": 2000,
+    "active": 315,
+    "deaths": 8
+}
+###
+
+GET http://localhost:3000/districts/322/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzAzODMyMDU3fQ.frnpcRbCcpPhmGAmuKW2EmoleNrSlZS62-pnW6XYNGQ
+
+###
+
+DELETE http://localhost:3000/districts/768/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzAzODMyMDU3fQ.frnpcRbCcpPhmGAmuKW2EmoleNrSlZS62-pnW6XYNGQ
+
+###
+
+GET http://localhost:3000/states/35/stats/ 
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzAzODMyMDU3fQ.frnpcRbCcpPhmGAmuKW2EmoleNrSlZS62-pnW6XYNGQ
